@@ -1,0 +1,14 @@
+{
+    "java.project.sourcePaths": [
+        "Kelas Terbuka/src/Day-11",
+        "project/java",
+        "Open Course Ware\\UI\\Source Code\\src"
+    ],
+    "java.project.outputPath": "Open Course Ware\\UI\\Source Code\\bin",
+    "editor.fontSize": 18,
+    "window.zoomLevel": 0.5,
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.fontSize": 18,
+    
+}
