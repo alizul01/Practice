@@ -11,7 +11,9 @@ public class iostream {
         Scanner sc = new Scanner(System.in);
         try {
             FileInputStream fileInput = new FileInputStream("input.txt");
-            System.out.println((char)fileInput.read());
+            for (int i = 0; i < 6;i++) {
+                System.out.print((char)fileInput.read());
+            }
         } catch (Exception e) {
             System.err.println(e);
         }
