@@ -1,6 +1,6 @@
 ## About Repostory
 
-Project-Latihan merupakan repository untuk belajar bahasa pemrograman dasar dari Java, Python, dan C. Semua files yang ada di sini merupakan dasar-dasar dari pemrograman setiap bahasa. 
+Project-Latihan merupakan repository untuk belajar bahasa pemrograman dasar dari Java, Python, C, Pemrograman Web, dan lain-lain. Semua files yang ada di sini merupakan dasar-dasar dari pemrograman setiap bahasa. 
 
 Apabila teman - teman ingin belajar juga, aku punya beberapa referensi yang dapat dijadikan sumber belajar
 
