@@ -36,3 +36,38 @@ while i < 10:
     i += 1
 else:
     print("i is no longer less than 10")
+
+drinks = ["coffee", "tea", "milk", "juice", "soda", "coke"]
+for x in drinks:
+    print(x)
+
+# Loop throught a String
+print()
+print("Looping String")
+for i in "Hello, World!":
+    print(i, end="")
+
+print()
+
+for x in drinks:
+    if x == "soda":
+        break
+    if x == "milk":
+        continue
+    print(x, end=" ")
+
+# Range() Function
+print()
+print("Range() Function")
+for i in range(10):
+    print(i, end=" ")
+
+print()
+
+for i in range(1, 11, 2):
+    print(i, end=" ")
+
+for x in range (6):
+    print(x)
+else:
+    print("Done")
