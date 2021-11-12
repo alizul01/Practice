@@ -1,7 +1,7 @@
 {
     "java.project.sourcePaths": [],
     "editor.fontSize": 18,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Mayukai Mono",
     "workbench.iconTheme": "material-icon-theme",
     "terminal.integrated.fontSize": 18,
