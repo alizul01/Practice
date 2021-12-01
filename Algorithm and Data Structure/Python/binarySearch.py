@@ -1,4 +1,5 @@
 # Binary Search with Python
+import numpy as np
 
 """
 Binary Search Algorithm :
@@ -8,18 +9,43 @@ Binary Search Algorithm :
 4. Jika terlalu besar maka range terakhir adalah data/2, jika tidak maka range terakhir adalah data dan range awal adalah data/2
 """
 
-def binary_search(data, target):
-    start = data[0]
-    end = len(data) - 1
-    mid = end//2
-    index = mid
-    while True:
-        if mid == target:
-            index = data[end]
-            return index
-        elif mid > target:
-            end = mid
-        elif mid < target:
-            start = mid
-        elif 
-                
+global countBin
+countBin = 0
+def binarySearch(data, target):
+    low = 0
+    counter = 0
+    high = len(data) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if target == data[mid]:
+            return "Target {} found at index {}".format(target,mid) + " with {} attempt".format(counter)
+        elif target < data[mid]:
+            high = mid - 1
+        elif target > data[mid]:
+            low = mid + 1
+        counter += 1
+    return "Target {} not found with {} attempt".format(target, counter)    
+
+def recursiveBinarySearch(data, target, low, high):
+    global countBin
+    mid = (low + high) // 2
+    if low > high:
+        return "Target {} not found".format(target) + " with {} attempt".format(countBin)
+    elif data[mid] == target:
+        return "Target {} found at index {}".format(target, mid) + " with {} attempt".format(countBin)
+    elif data[mid] > target:
+        countBin += 1
+        return recursiveBinarySearch(data, target, low, mid - 1)
+    else:
+        countBin += 1
+        return recursiveBinarySearch(data, target, mid + 1, high)
+
+def main():
+    dataSet = np.array(list(set(np.random.randint(1,1000,1000))))
+    dataSet = sorted(dataSet)
+    
+    targetData = int(input("Masukkan angka untuk dicari : "))
+    
+    print(binarySearch(dataSet, targetData))
+    print(recursiveBinarySearch(dataSet, targetData, 0, len(dataSet) - 1))
+main()
