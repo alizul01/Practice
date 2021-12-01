@@ -1,5 +1,6 @@
 # Binary Search with Python
 import numpy as np
+
 """
 Binary Search Algorithm :
 1. Masukkan data
@@ -7,6 +8,7 @@ Binary Search Algorithm :
 3. Cek data/2, apakah ada target? Jika iya maka return index, jika tidak maka cek apakah lebih besar atau kecil
 4. Jika terlalu besar maka range terakhir adalah data/2, jika tidak maka range terakhir adalah data dan range awal adalah data/2
 """
+
 global countBin
 countBin = 0
 def binarySearch(data, target):
@@ -47,4 +49,3 @@ def main():
     print(binarySearch(dataSet, targetData))
     print(recursiveBinarySearch(dataSet, targetData, 0, len(dataSet) - 1))
 main()
-

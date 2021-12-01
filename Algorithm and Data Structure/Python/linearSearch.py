@@ -1,4 +1,5 @@
 # Make linear search with a list of numbers
+
 from numpy import random as rd
 from numpy import sort
 def linear_search(list, num):
@@ -18,5 +19,4 @@ def main():
         print("Number not found")
     else:
         print("Number found at index : ", index)
-
 main()
